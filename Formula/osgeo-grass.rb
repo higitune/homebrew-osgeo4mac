@@ -108,7 +108,7 @@ class OsgeoGrass < Formula
     depends_on "osgeo-postgresql"
   end
 
-  depends_on :x11 if build.without? "aqua" # needs to find at least X11/include/GL/gl.h
+  depends_on "libx11" if build.without? "aqua" # needs to find at least X11/include/GL/gl.h
 
   # other dependencies
   if build.with? "others"

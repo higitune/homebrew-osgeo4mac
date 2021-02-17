@@ -84,7 +84,7 @@ class OsgeoOpenscenegraph < Formula
   depends_on "llvm"
   depends_on "gstreamer"
 
-  depends_on :x11
+  depends_on "libx11"
 
   # https://gentoobrowse.randomdan.homeip.net/packages/dev-games/openscenegraph
   # https://bugs.gentoo.org/698866

@@ -46,7 +46,7 @@ class Grass7Lts < Formula
   depends_on "mysql" => :optional
   depends_on "cairo"
   depends_on "ghostscript" # for cartographic composer previews
-  depends_on :x11 # needs to find at least X11/include/GL/gl.h
+  depends_on "libx11" # needs to find at least X11/include/GL/gl.h
   depends_on "openblas" => :optional
   depends_on "liblas-gdal2" if build.with? "liblas"
   depends_on "osgeo-netcdf" => :optional
